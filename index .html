@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Samgyup 199 | Eat and Dine</title>
+    
+    <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU-ZNHqVey7F4DtB4PH0LSi3_svOilYsAW9w&s">
+    
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #e63946;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 2px solid white;
+            object-fit: cover;
+        }
+        .header-text h1 { margin: 0; font-size: 2.5em; text-transform: uppercase; line-height: 1; }
+        .header-text p { margin: 5px 0 0 0; font-style: italic; }
+        
+        .container { max-width: 900px; margin: auto; background: #1e1e1e; padding: 25px; border-radius: 15px; box-shadow: 0px 4px 15px rgba(0,0,0,0.5); }
+        h2 { color: #e63946; border-bottom: 2px solid #444; padding-bottom: 10px; margin-top: 30px; }
+        
+        /* About Section */
+        .about-section {
+            background: #252525;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-left: 5px solid #ffca28;
+        }
+
+        .menu-item { 
+            background: #2a2a2a; 
+            margin: 10px 0; 
+            padding: 12px 15px; 
+            border-left: 5px solid #e63946; 
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+        }
+        .menu-content { flex: 1; }
+        .price { color: #ffca28; font-weight: bold; font-size: 1.1em; display: block; }
+        .weight { color: #888; font-size: 0.85em; }
+
+        .food-thumb {
+            width: 80px;
+            height: 80px;
+            border-radius: 8px;
+            object-fit: cover;
+            border: 1px solid #444;
+        }
+
+        .sides-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .fb-link {
+            display: inline-block;
+            background: #1877f2;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .fb-link:hover { background: #145dbf; }
+
+        .reservation-form {
+            background: #2a2a2a;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            border: 1px solid #444;
+        }
+        input, select {
+            width: 95%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #555;
+            background: #333;
+            color: white;
+        }
+        .submit-btn {
+            background-color: #e63946;
+            color: white;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .submit-btn:hover { background-color: #b91c1c; }
+        
+        footer { margin-top: 30px; font-size: 0.9em; color: #888; text-align: center; border-top: 1px solid #444; padding-top: 20px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU-ZNHqVey7F4DtB4PH0LSi3_svOilYsAW9w&s" alt="Samgyup 199 Logo" class="logo">
+        <div class="header-text">
+            <h1>SAMGYUP 199</h1>
+            <p>We fill your stomach, without emptying your pockets!</p>
+        </div>
+    </header>
+
+    <section class="about-section">
+        <h2>About Samgyup 199</h2>
+        <p>Welcome to <strong>Samgyup 199</strong>, your go-to destination for authentic and affordable Korean BBQ in Gapan. We pride ourselves on serving high-quality sliced meats, fresh side dishes, and our signature sauces that satisfy your cravings without breaking the bank. Whether you're dining in for an unlimited feast or ordering a combo deal for the whole family, we promise a "busog-sulit" experience every time!</p>
+    </section>
+
+    <section>
+        <h2>Unlimited Dine-In</h2>
+        <div class="menu-item">
+            <div class="menu-content">
+                <strong>Unlimited Pork + Sides</strong>
+                <span class="price">P199.00</span>
+            </div>
+            <img src="https://shop.soban.ph/cdn/shop/products/WEB_650x650px_HONEYGARLICSAMGYUPSAL_650x.png?v=1594034216" class="food-thumb" alt="Pork">
+        </div>
+        <div class="menu-item">
+            <div class="menu-content">
+                <strong>Unlimited Pork & Beef + Sides</strong>
+                <span class="price">P299.00</span>
+            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ5yTKVzul8NHZPF3YHR7gTVw5b7hfCShteA&s" class="food-thumb" alt="Beef">
+        </div>
+        <div class="menu-item">
+            <div class="menu-content">
+                <strong>Unli Chicken Yakiniku (Add-on)</strong>
+                <span class="price">+P29.00</span>
+            </div>
+            <img src="https://o-cdf.oramiland.com/unsafe/cnc-magazine.oramiland.com/parenting/original_images/Chicken_Yakiniku.png" class="food-thumb" alt="Chicken Yakiniku">
+        </div>
+    </section>
+
+    <section>
+        <h2>Side Dishes (Single Order)</h2>
+        <div class="sides-grid">
+            <div class="menu-item">
+                <div class="menu-content">Kimchi <span class="weight">250g</span> <span class="price">P80</span></div>
+                <img src="https://i.ytimg.com/vi/0sX_wDCbeuU/maxresdefault.jpg" class="food-thumb" alt="Kimchi">
+            </div>
+            <div class="menu-item">
+                <div class="menu-content">Fish Cake <span class="weight">250g</span> <span class="price">P80</span></div>
+                <img src="https://takestwoeggs.com/wp-content/uploads/2023/03/Korean-Fish-Cake-Takestwoeggs-final-photography-1.jpg" class="food-thumb" alt="Fish Cake">
+            </div>
+            <div class="menu-item">
+                <div class="menu-content">Potato Marble <span class="weight">250g</span> <span class="price">P60</span></div>
+                <img src="https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3828752731796506535" class="food-thumb" alt="Potato">
+            </div>
+            <div class="menu-item">
+                <div class="menu-content">Lettuce <span class="weight">250g</span> <span class="price">P60</span></div>
+                <img src="https://www.100daysofrealfood.com/wp-content/uploads/2023/11/vecteezy_lettuce-salad-leaf-isolated-on-white-background-with_5582269-scaled.jpg" class="food-thumb" alt="Lettuce">
+            </div>
+            <div class="menu-item">
+                <div class="menu-content">Chorizo <span class="weight">250g</span> <span class="price">P60</span></div>
+                <img src="https://www.carolinescooking.com/wp-content/uploads/2023/06/chorizo-in-cider-featured-pic-sq.jpg" class="food-thumb" alt="Chorizo">
+            </div>
+            <div class="menu-item">
+                <div class="menu-content">Kernel Corn <span class="weight">250g</span> <span class="price">P60</span></div>
+                <img src="https://www.talleys.co.nz/_resized/assets/2804/Corn-Kernel_18ad78ee55105ddb3f94e30f4af8cdd1.jpg" class="food-thumb" alt="Corn">
+            </div>
+            <div class="menu-item">
+                <div class="menu-content">Siomai <span class="weight">10pcs</span> <span class="price">P60</span></div>
+                <img src="http://pampangasbest.store/cdn/shop/products/siomai-250g-2.jpg?v=1633240920" class="food-thumb" alt="Siomai">
+            </div>
+            <div class="menu-item">
+                <div class="menu-content">Cheese Sauce <span class="weight">250g</span> <span class="price">P120</span></div>
+                <img src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=941571101318973" class="food-thumb" alt="Cheese">
+            </div>
+        </div>
+    </section>
+
+    <center>
+        <a href="https://www.facebook.com/share/1C1jJXnvrH/" class="fb-link" target="_blank">Follow us on Facebook</a>
+    </center>
+
+    <section class="reservation-form">
+        <h2>Book a Table</h2>
+        <form id="resForm">
+            <label>Full Name:</label>
+            <input type="text" id="name" placeholder="e.g. Juan Dela Cruz" required>
+            
+            <label>Contact Number:</label>
+            <input type="tel" id="phone" placeholder="09XX-XXX-XXXX" required>
+            
+            <label>Number of Guests:</label>
+            <select id="guests">
+                <option>2 - 4 People</option>
+                <option>5 - 7 People</option>
+                <option>8+ People (Big Group)</option>
+            </select>
+            
+            <label>Preferred Date:</label>
+            <input type="date" id="date" required>
+            
+            <button type="button" class="submit-btn" onclick="sendReservation()">
+                RESERVE NOW
+            </button>
+        </form>
+    </section>
+
+    <script>
+        function sendReservation() {
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const guests = document.getElementById('guests').value;
+            const date = document.getElementById('date').value;
+
+            if(!name || !phone || !date) {
+                alert("Please fill in all fields.");
+                return;
+            }
+
+            const subject = "Table Reservation - " + name;
+            const body = `Reservation Details:\nName: ${name}\nContact: ${phone}\nGuests: ${guests}\nDate: ${date}`;
+            
+            // Replaces with your business email
+            window.location.href = `mailto:samgyup199@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            
+            alert('Thank you! Your email app should now open to complete the reservation.');
+        }
+    </script>
+
+    <footer>
+        <p>Contact: 0936 198 0341</p>
+        <p>Narrat St. Santa Maria, Bulacan, Philippines</p>
+        <p>&copy; 2026 Samgyup 199</p>
+    </footer>
+</div>
+
+</body>
+</html>
